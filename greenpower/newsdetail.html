@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Your Website Title</title>
+	<meta name="description" content="Website Description" />
+	<meta name="keywords" content="Website Kwywords" />
+	<style type="text/css" media="all">@import "style/style.css";</style>
+	<!--[if lt IE 7]>
+	<style type="text/css">@import "style/ie.css";</style>
+	<script src="script/DD_belatedPNG.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		DD_belatedPNG.fix('#logo span, #loginarea, #panellogin, .textboxlogin, img');
+	</script>
+	<![endif]-->
+	<!--[if IE 7]><style type="text/css">@import "style/ie7.css";</style><![endif]-->
+	<script src="script/jquery.js" type="text/javascript"></script>
+	<script src="script/ui_core.js" type="text/javascript"></script>
+	<script src="script/ui_tabs.js" type="text/javascript"></script>
+	<script src="script/lightbox.js" type="text/javascript"></script>
+	<script src="script/twitter.js" type="text/javascript"></script>
+	<script src="script/gettwitter.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(function() {
+		$("#butslide").click(function(){
+				$("#panellogin").slideToggle("fast");
+				$(this).toggleClass("active"); return false;
+		}); 
+		$('#tabsnav').tabs({ fx: { opacity: 'toggle' } });
+		$('a.popup').lightBox({fixedNavigation:true});
+	});
+	</script>
+</head>
+<body>
+<p><a class="skiplink" href="#maincontent">Skip over navigation</a></p>
+<div id="container">
+	<div id="wrapper">
+		<div id="header">
+			<div id="headertop">
+				<a href="#" class="replace" id="logo"><span></span>Rushhour - Your Company Slogan</a>
+				<div id="loginarea">
+					<p class="notlogin">You are not log in</p>
+					<p class="loginbut"><a href="#" class="butlogin" id="butslide">Login</a> <span>or</span> <a href="#" class="butlogin">Signup</a></p>
+					<div id="panellogin">
+						<form method="post" action="#" id="frmlogin">
+							<div>
+								<label for="lgnusername">Username:</label> <input type="text" name="username" class="textboxlogin" id="lgnusername" /><br />
+								<label for="lgnpassword">Password:</label> <input type="text" name="password" class="textboxlogin" id="lgnpassword" /><br />
+								<label></label> <input type="submit" name="submitlogin" class="submitlogin" value="Login" /> <a href="#" class="linkforgot">Forgot Password?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="placemainmenu">
+				<ul id="mainmenu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li class="active"><a href="newslist.html">News</a></li>
+					<li><a href="#">Our Services</a>
+						<ul>
+							<li><a href="newsdetail.html">News Detail</a></li>
+							<li><a href="services.html">Some of our services</a></li>
+						</ul>
+					</li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="#">Color</a>
+						<ul>
+							<li><a href="../blue/index.html">Blue Sea Color</a></li>
+							<li><a href="../green/index.html">Green Grass Color</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form method="post" action="#" id="frmsearch">
+					<div>
+						<input type="text" name="search" class="textboxsearch" value="Search" onblur="if(this.value.length == 0) this.value='Search';" onclick="if(this.value == 'Search') this.value='';" /> <input type="submit" name="submitsearch" class="submitsearch" value="Search" />
+					</div>
+				</form>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="content">
+		
+			<div id="maincontent">
+				<div class="boxbig">
+					<h1 class="titlebig">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+					<div class="boxbigcontent">
+						<ul id="listnews">
+							<li class="noborder">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, mi eu posuere facilisis, dolor sapien auctor orci, vel posuere velit nibh ac tortor. Suspendisse velit erat, sodales id iaculis non, dapibus ut lacus. Nulla facilisi. Ut dui sapien, vulputate id tincidunt nec, semper quis arcu. Nunc suscipit pellentesque tincidunt. Vestibulum sed mauris in nisi suscipit ullamcorper sit amet vel dui. Praesent commodo feugiat lectus, eget hendrerit risus viverra a.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, mi eu posuere facilisis, dolor sapien auctor orci, vel posuere velit nibh ac tortor. Suspendisse velit erat, sodales id iaculis non, dapibus ut lacus. Nulla facilisi. Ut dui sapien, vulputate id tincidunt nec, semper quis arcu. Nunc suscipit pellentesque tincidunt. Vestibulum sed mauris in nisi suscipit ullamcorper sit amet vel dui. Praesent commodo feugiat lectus, eget hendrerit risus viverra a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, mi eu posuere facilisis, dolor sapien auctor orci, vel posuere velit nibh ac tortor. Suspendisse velit erat, sodales id iaculis non, dapibus ut lacus. Nulla facilisi. Ut dui sapien, vulputate id tincidunt nec, semper quis arcu. Nunc suscipit pellentesque tincidunt. Vestibulum sed mauris in nisi suscipit ullamcorper sit amet vel dui. Praesent commodo feugiat lectus, eget hendrerit risus viverra a.</p>
+								<img src="images/img_2.jpg" alt="Images" class="imgleft" />
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, mi eu posuere facilisis, dolor sapien auctor orci, vel posuere velit nibh ac tortor. Suspendisse velit erat, sodales id iaculis non, dapibus ut lacus. Nulla facilisi. Ut dui sapien, vulputate id tincidunt nec, semper quis arcu. Nunc suscipit pellentesque tincidunt. 
+								</p>
+								<p>Vestibulum sed mauris in nisi suscipit ullamcorper sit amet vel dui. Praesent commodo feugiat lectus, eget hendrerit risus viverra a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, mi eu posuere facilisis, dolor sapien auctor orci, vel posuere velit nibh ac tortor. Suspendisse velit erat, sodales id iaculis non, dapibus ut lacus. Nulla facilisi. Ut dui sapien, vulputate id tincidunt nec, semper quis arcu. </p>
+								<ul class="listinfodet">
+									<li class="posted">Posted by <strong>Johndoe</strong> on September 29th 2009</li>
+									<li><a href="#">Category</a></li>
+								</ul>
+								<div class="clear"></div>
+							</li>
+						</ul>
+					
+				    <ul id="listcomment">
+							<li>
+							  <div class="clear"></div>
+							</li>
+							<li>
+							  <div class="clear"></div>
+							</li>
+						</ul>
+		
+					</div>
+					<div class="boxbigcontentbottom"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="footer">
+			<p id="texttwitter"></p>
+			<ul id="menufooter">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li class="last"><a href="#">Follow us on Twitter</a></li>
+			</ul>
+			<ul id="menufooterright">
+				<li>Copyright 2009, Rushhour, Inc.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></li>
+				<li class="last"><a href="#">Back to top</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

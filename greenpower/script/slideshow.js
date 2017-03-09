@@ -1,0 +1,29 @@
+
+
+
+
+
+jQuery().ready(function(){
+
+	    $('#slideshow').jCarouselLite({ 
+    	auto : 1200,
+		easing:'easeInOutExpo', //Animation for Images Slideshow
+		speed:900,
+		vertical:true,
+		visible:1
+		});
+		
+	    $('#introright').jCarouselLite({ 
+    
+		easing:'easeInOutExpo', //Animation for Text
+		speed:900,
+		visible:1
+		});
+		
+		$('#captionslideshow').jCarouselLite({ 
+        auto : 1200,
+		easing:'easeInOutExpo', //Animation for Photo Caption
+		speed:900,
+		visible:1
+		});
+});

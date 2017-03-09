@@ -1,0 +1,418 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.3
+-- http://www.phpmyadmin.net
+-- 
+-- 主机: localhost
+-- 生成日期: 2016 年 04 月 24 日 09:04
+-- 服务器版本: 5.0.51
+-- PHP 版本: 5.2.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- 数据库: `dgdz`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `dgdz_adpwd`
+-- 
+
+CREATE TABLE `dgdz_adpwd` (
+  `dgdz_adpwd` char(7) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- 
+-- 导出表中的数据 `dgdz_adpwd`
+-- 
+
+INSERT INTO `dgdz_adpwd` VALUES ('123');
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `dgdz_files`
+-- 
+
+CREATE TABLE `dgdz_files` (
+  `autoid` int(10) unsigned NOT NULL auto_increment,
+  `filename` varchar(255) character set gb2312 NOT NULL,
+  `filetime` varchar(19) character set gb2312 NOT NULL,
+  `filetype` char(1) NOT NULL,
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- 
+-- 导出表中的数据 `dgdz_files`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `dgdz_huida`
+-- 
+
+CREATE TABLE `dgdz_huida` (
+  `autoid` int(10) NOT NULL auto_increment,
+  `dtime` varchar(19) NOT NULL,
+  `dname` varchar(50) character set gb2312 NOT NULL,
+  `dtitle` varchar(255) character set gb2312 NOT NULL,
+  `dtext` mediumtext character set gb2312 NOT NULL,
+  `dtext1` text character set gb2312,
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- 
+-- 导出表中的数据 `dgdz_huida`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `dgdz_news`
+-- 
+
+CREATE TABLE `dgdz_news` (
+  `autoid` int(10) unsigned NOT NULL auto_increment,
+  `ntitle` varchar(255) character set gb2312 NOT NULL,
+  `ntype` int(4) NOT NULL,
+  `ntext` varchar(255) character set gb2312 NOT NULL,
+  `ntime` varchar(19) character set gb2312 NOT NULL,
+  `nimage` text NOT NULL,
+  `nfj1` text NOT NULL,
+  `nfj2` text NOT NULL,
+  `nfj3` text NOT NULL,
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+-- 
+-- 导出表中的数据 `dgdz_news`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `dgdz_ques`
+-- 
+
+CREATE TABLE `dgdz_ques` (
+  `autoid` int(10) unsigned NOT NULL auto_increment,
+  `stime` varchar(19) character set gb2312 NOT NULL,
+  `sname` varchar(50) character set gb2312 NOT NULL,
+  `stitle` varchar(255) character set gb2312 NOT NULL,
+  `stext` text character set gb2312,
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- 
+-- 导出表中的数据 `dgdz_ques`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_adpwd`
+-- 
+
+CREATE TABLE `yjs_adpwd` (
+  `autoid` int(10) NOT NULL auto_increment,
+  `sort` int(4) NOT NULL default '0',
+  `depar` varchar(50) NOT NULL default '',
+  `pwd` varchar(15) NOT NULL default '',
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=gb2312 AUTO_INCREMENT=126 ;
+
+-- 
+-- 导出表中的数据 `yjs_adpwd`
+-- 
+
+INSERT INTO `yjs_adpwd` VALUES (1, 1, '管理员', '0502');
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_ds`
+-- 
+
+CREATE TABLE `yjs_ds` (
+  `autoid` int(10) unsigned NOT NULL auto_increment,
+  `image` text,
+  `name` varchar(19) character set latin1 NOT NULL default '',
+  `xb` varchar(5) character set gb2312 NOT NULL default '',
+  `mz` varchar(10) character set latin1 NOT NULL default '',
+  `xkzy` int(4) default NULL,
+  `zc` varchar(6) character set gb2312 default NULL,
+  `sj1` varchar(19) character set latin1 default NULL,
+  `bd` varchar(6) character set gb2312 default NULL,
+  `sj2` varchar(19) character set latin1 default NULL,
+  `tel` varchar(50) default NULL,
+  `email` varchar(50) default NULL,
+  `yjfx` mediumtext character set latin1,
+  `kycg` mediumtext character set latin1,
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=95 ;
+
+-- 
+-- 导出表中的数据 `yjs_ds`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_files`
+-- 
+
+CREATE TABLE `yjs_files` (
+  `autoid` int(20) NOT NULL auto_increment,
+  `filename` varchar(201) NOT NULL,
+  `filetime` varchar(29) NOT NULL,
+  `filetype` int(6) NOT NULL,
+  `filesimage` text character set utf8 NOT NULL,
+  `filestext` text NOT NULL,
+  KEY `autoid` (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=281 ;
+
+-- 
+-- 导出表中的数据 `yjs_files`
+-- 
+
+INSERT INTO `yjs_files` VALUES (274, '2?′í', '2016-04-23', 1, '', '?¤???1??????');
+INSERT INTO `yjs_files` VALUES (276, '2YY?', '2016-04-23', 1, '', '?????to??′?e');
+INSERT INTO `yjs_files` VALUES (277, 'SGHD', '2016-04-23', 1, '', 'FBFG');
+INSERT INTO `yjs_files` VALUES (280, '2?·??è′ê??', '2016-04-23', 2, '', '2ú?ü·￠???-è???');
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_gzry`
+-- 
+
+CREATE TABLE `yjs_gzry` (
+  `autoid` int(10) unsigned NOT NULL auto_increment,
+  `image` varchar(100) character set latin1 default NULL,
+  `name` varchar(25) NOT NULL default '',
+  `xb` int(2) NOT NULL default '0',
+  `mz` varchar(10) character set latin1 default NULL,
+  `zw` varchar(50) default NULL,
+  `bgdd` varchar(155) character set latin1 default NULL,
+  `tel` varchar(19) default NULL,
+  `email` varchar(19) character set latin1 default NULL,
+  `zzfw` varchar(255) character set latin1 default NULL,
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+
+-- 
+-- 导出表中的数据 `yjs_gzry`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_image`
+-- 
+
+CREATE TABLE `yjs_image` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `imgUrl` varchar(255) NOT NULL default '',
+  `imgText` varchar(255) character set latin1 NOT NULL default '',
+  `imgLink` varchar(255) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=27 ;
+
+-- 
+-- 导出表中的数据 `yjs_image`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_kypwd`
+-- 
+
+CREATE TABLE `yjs_kypwd` (
+  `autoid` bigint(20) NOT NULL auto_increment,
+  `username` text NOT NULL,
+  `userpwd` varchar(20) NOT NULL default '',
+  KEY `autoid` (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+-- 
+-- 导出表中的数据 `yjs_kypwd`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_lwsj`
+-- 
+
+CREATE TABLE `yjs_lwsj` (
+  `autoid` int(10) NOT NULL auto_increment,
+  `tijiao` int(2) NOT NULL default '0',
+  `userid` int(8) NOT NULL default '0',
+  `zzxm1` varchar(60) NOT NULL default '',
+  `zzxm2` varchar(60) default NULL,
+  `zzxm3` varchar(60) default NULL,
+  `zzxm4` varchar(60) default NULL,
+  `sf1` varchar(5) NOT NULL default '',
+  `sf2` varchar(5) default NULL,
+  `sf3` varchar(5) default NULL,
+  `sf4` varchar(5) default NULL,
+  `lwtm` varchar(80) NOT NULL default '',
+  `qkmc` varchar(50) NOT NULL default '',
+  `qzym` varchar(30) NOT NULL default '',
+  `jslx` varchar(30) default NULL,
+  `beiz` varchar(60) default NULL,
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+-- 
+-- 导出表中的数据 `yjs_lwsj`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_news`
+-- 
+
+CREATE TABLE `yjs_news` (
+  `autoid` int(10) unsigned NOT NULL auto_increment,
+  `ntitle` varchar(255) character set latin1 NOT NULL default '',
+  `ntype` int(4) NOT NULL default '0',
+  `ntext` text character set latin1 NOT NULL,
+  `ntime` varchar(19) NOT NULL default '',
+  `nimage` text,
+  `nfj1` text,
+  `nfj2` text,
+  `nfj3` text,
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1801 ;
+
+-- 
+-- 导出表中的数据 `yjs_news`
+-- 
+
+INSERT INTO `yjs_news` VALUES (1791, 'ììê11?μá', 1, 'Dò?￡?D', '2016-04-13', NULL, '', '', '');
+INSERT INTO `yjs_news` VALUES (1800, '?í?éò??T', 1, 'ó??éèYèìì??èo???°?', '2016-04-24', NULL, '', '', '');
+INSERT INTO `yjs_news` VALUES (1793, 'GXFD', 1, 'HXNVBNhttp://www.bilibili.com/', '2016-04-20', NULL, '', '', '');
+INSERT INTO `yjs_news` VALUES (1799, 'vmhjk', 1, '1êòa', '2016-04-23', NULL, '20160423120127671.jpg*slide_1.jpg', '', '');
+INSERT INTO `yjs_news` VALUES (1796, '?á2??á', 2, 'μ??÷https://www.duba.com/?f=ienewtab', '2016-04-22', NULL, '', '', '');
+INSERT INTO `yjs_news` VALUES (1797, '1?oY', 1, 'μ??÷https://www.duba.com/?f=ienewtab', '2016-04-22', NULL, '', '', '');
+INSERT INTO `yjs_news` VALUES (1798, '?ù±¨', 7, '????1ú?êoí1??í?á±è??', '2016-04-23', NULL, '', '', '');
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_people`
+-- 
+
+CREATE TABLE `yjs_people` (
+  `autoid` int(10) unsigned NOT NULL auto_increment,
+  `image` varchar(255) character set latin1 default NULL,
+  `name` varchar(25) NOT NULL default '',
+  `type` varchar(10) NOT NULL default '0',
+  `address` varchar(155) character set latin1 default NULL,
+  `tel` varchar(19) default NULL,
+  `email` varchar(19) character set latin1 default NULL,
+  `detail` text,
+  `sd` varchar(100) character set latin1 default NULL,
+  `xb` varchar(2) NOT NULL,
+  `gzdw` varchar(20) character set ucs2 NOT NULL,
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=95 ;
+
+-- 
+-- 导出表中的数据 `yjs_people`
+-- 
+
+INSERT INTO `yjs_people` VALUES (89, '', 'oí??', '1', 'www', '?1ê???·???', '653576578', '1é·Y?°o?1ú', 'D??a1?3???o?', '1', '');
+INSERT INTO `yjs_people` VALUES (90, '', 'o?μ?·?', '1', '', 'o?', '', '·?12oí1ú', '', '1', '');
+INSERT INTO `yjs_people` VALUES (91, '', '???e', '1', '', '', '', '', '', '1', '');
+INSERT INTO `yjs_people` VALUES (92, '', '??·ê', '1', '·?', '', '', '', '', '1', '');
+INSERT INTO `yjs_people` VALUES (93, '', 'o?', '3', '', '', '', '', '', '1', '');
+INSERT INTO `yjs_people` VALUES (94, '', '·?3￡v', '4', '', '', '', '', '', '1', '');
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_ptuser`
+-- 
+
+CREATE TABLE `yjs_ptuser` (
+  `autoid` bigint(20) NOT NULL auto_increment,
+  `userid` varchar(20) NOT NULL default '',
+  `username` varchar(50) default NULL,
+  `userpwd` varchar(20) NOT NULL default '',
+  `userm` varchar(10) NOT NULL default '',
+  KEY `autoid` (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+-- 
+-- 导出表中的数据 `yjs_ptuser`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_rps`
+-- 
+
+CREATE TABLE `yjs_rps` (
+  `autoid` int(22) unsigned NOT NULL auto_increment,
+  `rpname` varchar(211) character set latin1 NOT NULL default '',
+  `rptime` varchar(24) NOT NULL default '',
+  `rptype` int(6) NOT NULL default '0',
+  `rpsimage` text,
+  `rpstext` text character set latin1 NOT NULL,
+  `rpfj1` text,
+  `rpfj2` text,
+  `rpfj3` text,
+  KEY `autoid` (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=237 ;
+
+-- 
+-- 导出表中的数据 `yjs_rps`
+-- 
+
+INSERT INTO `yjs_rps` VALUES (234, 'o￡??1ú?ê', '2016-04-23', 1, '', 'oív???e???e?a?§');
+INSERT INTO `yjs_rps` VALUES (236, 'oí1ú?ò', '2016-04-23', 2, '', '·¨1?oí?ó?òo??é2?');
+
+-- --------------------------------------------------------
+
+-- 
+-- 表的结构 `yjs_yjsh`
+-- 
+
+CREATE TABLE `yjs_yjsh` (
+  `autoid` int(10) unsigned NOT NULL auto_increment,
+  `bm` int(5) NOT NULL default '0',
+  `bz` int(3) NOT NULL default '0',
+  `image` varchar(100) default NULL,
+  `name` varchar(19) NOT NULL default '',
+  `xb` int(2) NOT NULL default '0',
+  `zzmm` varchar(19) default NULL,
+  `zw` varchar(10) default NULL,
+  `zy` varchar(155) default NULL,
+  `tel` varchar(11) default NULL,
+  `email` varchar(19) default NULL,
+  `zym` varchar(255) default NULL,
+  `beiz` varchar(120) default NULL,
+  PRIMARY KEY  (`autoid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=83 ;
+
+-- 
+-- 导出表中的数据 `yjs_yjsh`
+-- 
+

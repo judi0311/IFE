@@ -1,0 +1,131 @@
+
+
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #f9fcfe; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000; PADDING-TOP: 0px;
+	FONT: 13px "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+	
+}
+
+FONT-WEIGHT: bold; FONT-SIZE: 1.5em; FONT-FAMILY: Georgia, "Times New Roman", Times, serif
+}
+FORM {
+	PADDING: 0px; MARGIN: 0px; 
+}
+
+H2 {
+	BACKGROUND: url(images/heading-bg.gif) repeat-x 50% bottom; MARGIN: 5px 10px; FONT: 32px Georgia, "Times New Roman", Times, serif; COLOR: #333
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+INPUT:unknown {
+	BORDER-RIGHT: #686868 1px solid; BORDER-TOP: #686868 1px solid; BACKGROUND: #fff; BORDER-LEFT: #686868 1px solid; BORDER-BOTTOM: #686868 1px solid
+}
+TEXTAREA:unknown {
+	BORDER-RIGHT: #686868 1px solid; BORDER-TOP: #686868 1px solid; BACKGROUND: #fff; BORDER-LEFT: #686868 1px solid; BORDER-BOTTOM: #686868 1px solid
+}
+LABEL:unknown {
+	BORDER-RIGHT: #686868 1px solid; BORDER-TOP: #686868 1px solid; BACKGROUND: #fff; BORDER-LEFT: #686868 1px solid; BORDER-BOTTOM: #686868 1px solid
+}
+
+
+DD {
+	MARGIN-BOTTOM: 6px
+}
+P {
+	LINE-HEIGHT: 140%
+}
+LI {
+MARGIN-BOTTOM: 6px;
+	LINE-HEIGHT: 140%
+}
+
+
+.select {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; MARGIN: 2px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+
+.submit INPUT {
+	BORDER-RIGHT: #999 3px double; PADDING-RIGHT: 0.25em; BORDER-TOP: #ccc 3px double; PADDING-LEFT: 0.25em; BACKGROUND: url(images/fade-butt.png); PADDING-BOTTOM: 0.25em; BORDER-LEFT: #ccc 3px double; COLOR: #333; PADDING-TOP: 0.25em; BORDER-BOTTOM: #999 3px double
+}
+.submit INPUT:unknown {
+	BORDER-RIGHT: #999 3px double; PADDING-RIGHT: 0.25em; BORDER-TOP: #ccc 3px double; PADDING-LEFT: 0.25em; BACKGROUND: url(images/fade-butt.png); PADDING-BOTTOM: 0.25em; BORDER-LEFT: #ccc 3px double; COLOR: #333; PADDING-TOP: 0.25em; BORDER-BOTTOM: #999 3px double
+}
+.button {
+	BORDER-RIGHT: #999 3px double; PADDING-RIGHT: 0.25em; BORDER-TOP: #ccc 3px double; PADDING-LEFT: 0.25em; BACKGROUND: url(images/fade-butt.png); PADDING-BOTTOM: 0.25em; BORDER-LEFT: #ccc 3px double; COLOR: #333; PADDING-TOP: 0.25em; BORDER-BOTTOM: #999 3px double
+}
+.button:unknown {
+	BORDER-RIGHT: #999 3px double; PADDING-RIGHT: 0.25em; BORDER-TOP: #ccc 3px double; PADDING-LEFT: 0.25em; BACKGROUND: url(images/fade-butt.png); PADDING-BOTTOM: 0.25em; BORDER-LEFT: #ccc 3px double; COLOR: #333; PADDING-TOP: 0.25em; BORDER-BOTTOM: #999 3px double
+}
+.submit INPUT:active {
+	BORDER-RIGHT: #ccc 3px double; BORDER-TOP: #999 3px double; BACKGROUND: #f4f4f4; BORDER-LEFT: #999 3px double; BORDER-BOTTOM: #ccc 3px double
+}
+.button:active {
+	BORDER-RIGHT: #ccc 3px double; BORDER-TOP: #999 3px double; BACKGROUND: #f4f4f4; BORDER-LEFT: #999 3px double; BORDER-BOTTOM: #ccc 3px double
+}
+.button {
+	PADDING: 0.15em; 
+}
+.button:unknown {
+	PADDING: 0.15em; 
+}
+ HTML .button {
+	PADDING: 0px;
+}
+.submit {
+	TEXT-ALIGN: right
+}
+
+
+
+#login {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(images/login-bkg-tile.gif) no-repeat center top; PADDING-BOTTOM: 0px; MARGIN: 5em auto 1em; WIDTH: 390px; COLOR: #fff; PADDING-TOP: 20px; POSITION: relative
+}
+#login FORM {
+	PADDING-RIGHT: 50px; PADDING-LEFT: 15px; MIN-HEIGHT: 200px; BACKGROUND: url(images/login-bkg-bottom.gif) no-repeat center bottom; PADDING-BOTTOM: 25px; MARGIN: 5px auto; WIDTH: 330px; PADDING-TOP: 0px; HEIGHT: 200px
+}
+
+#login P {
+	FONT-SIZE: 12px
+}
+
+
+#login H1 A {
+	DISPLAY: block; MARGIN: 0px auto; WIDTH: 320px; TEXT-INDENT: -9999px; HEIGHT: 88px; BORDER-BOTTOM-STYLE: none
+}
+
+
+.login UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 325px; LINE-HEIGHT: 1.2; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#protected #login .bottom {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 325px; LINE-HEIGHT: 1.2; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.login UL LI {
+	FONT-SIZE: 11px
+}
+.login UL LI A {
+	COLOR: #0d324f; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#login UL LI A:hover {
+	COLOR: #fff
+}
+#login .input {
+ padding:2px;
+	MARGIN-TOP: 0px; FONT-SIZE: 1.3em; WIDTH: 95%;
+	 MARGIN-LEFT: 15px
+}
+#login.select {
+ padding:5px;
+	MARGIN-TOP: 0px; FONT-SIZE: 1.2em; WIDTH: 97%;
+	 MARGIN-LEFT: 15px
+}
+
+#login P LABEL {
+	FONT-SIZE: 12px
+}
+#login #submit {
+	FONT-SIZE: 14px; MARGIN: 0px
+}
+
+
